@@ -1,0 +1,214 @@
+<template>
+	<lightning-card>
+	
+	<div class="kanban">
+		<div class="kanban-container">
+			<div class="kanban-column">
+				<div class="kanban-column-header">
+					Alocados
+					<br>
+					<lightning-card  variant="Narrow"  title="Empresa" icon-name="standard:account">
+            <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+            <p class="slds-p-horizontal_small"></p>
+            
+        </lightning-card>
+						</div>
+							
+									<li class="card"><lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar1.jpg"></lightning-avatar> Junior Paes 
+										<br>
+										Desenvolvedor Java l <br>
+										<div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+        </h2>
+        <lightning-badge label="Alocações" icon-name="standard:event"></lightning-badge>
+        <lightning-badge label="Realocação" icon-name="custom:custom11"></lightning-badge>
+    </div>
+									</li>
+							
+							<ul class="kanban-column-list">
+									<li class="card"><lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar3.jpg"></lightning-avatar> Paulo Alves<br>
+										Funcional Salesforce II<br>
+										<div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+        </h2>
+        <lightning-badge label="Alocações" icon-name="standard:event"></lightning-badge>
+        <lightning-badge label="Realocação" icon-name="custom:custom11"></lightning-badge>
+    </div>
+									</li>
+							</ul>
+							<ul class="kanban-column-list">
+								 <li class="card"><lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar1.jpg"></lightning-avatar> Felipe Alves<br>
+								 		Desenvolvedor Salesforce II<br>
+										 <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+        </h2>
+        <lightning-badge label="Alocações" icon-name="standard:event"></lightning-badge>
+        <lightning-badge label="Realocação" icon-name="custom:custom11"></lightning-badge>
+    </div>
+								 </li>
+							</ul>
+							<br>
+						</div>
+	<div class="kanban-column">
+			<div class="kanban-column-header">
+				Fevereiro
+							</div>
+							<div>	<p>
+										1 semana | 2 Semana | 3 Semana  | 4 Semana
+											</p></div>
+							<ul class="kanban-column-list"><br><br><br>
+								<div data-progress="bar1" class="slds-progress-bar slds-progress-bar_circular">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">75% -- Nubank</div>
+														</span>
+													</div>
+								<div data-progress="bar2" class="textBar">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">25% -- brMalls</div>
+														</span>
+													</div>
+						
+							</ul>
+
+							<ul class="kanban-column-list"><br><br><br>
+							<div data-progress="bar3" class="slds-progress-bar slds-progress-bar_circular">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">35% -- Nubank</div>
+														</span>
+													</div>
+							<div data-progress="bar4" class="textBar">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">65% -- BrasilPrev</div>
+														</span>
+													</div>
+
+							</ul>
+							<ul class="kanban-column-list"><br><br><br>
+							<div data-progress="bar5" class="slds-progress-bar slds-progress-bar_circular">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">100% -- BrasilPrev</div>
+														</span>
+													</div>
+							<div data-progress="bar6" class="textBar">
+														<span class="slds-progress-bar__value">
+															<div class="barNumber">100% -- Nubank</div>
+														</span>
+													</div>
+
+							</ul>
+							<br>
+						</div>
+					</div>
+				</div>
+		
+				<div class="kanban">
+					<div class="kanban-container">
+						<div class="kanban-column">
+							<div class="kanban-column-header">
+								Não Alocados
+							</div>
+
+							
+    <p class="slds-text-heading_small">{activeSectionMessage}</p>
+
+
+    <lightning-accordion class="Recursos">
+        <lightning-accordion-section name="A" label="Java">
+								</li><br>
+			
+
+    <div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+						Desenvolvedor Java I
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+
+    <div class="slds-m-vertical_medium">
+    </div>						
+								</li><br>
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+				Desenvolvedor Java Jr
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+								 
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="SalesForce Admin">
+								<br>
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+						SalesForce Funcional Jr
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+								
+									<br>
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+									SalesForce Funcional I
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+									<br>
+									<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+						SalesForce Funcional II
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="C" label="SalesForce Developer">
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+									Desenvolvedor SalesForce Jr
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+									Desenvolvedor SalesForce I
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+
+								<div class="slds-m-top_small slds-m-bottom_medium">
+        <h2 class="slds-text-heading_small slds-m-bottom_small">
+									Desenvolvedor SalesForce II
+
+        </h2>
+
+        <lightning-button variant="brand" label="Alocar" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+		</div>
+					</lightning-accordion-section>
+					</lightning-accordion>
+					</div>
+					</div>
+					</div>
+					</lightning-card>
+</template>

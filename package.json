@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/alemaoheder.lwc-l1xjfkkq",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve VTC55OmMC3CxkdOY1uz4 --open"
+  }
+}
